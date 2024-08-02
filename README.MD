@@ -129,5 +129,4 @@ Contributions to CaseMaster CLI are welcome! Please follow these steps:
    ```
 5. **Create a Pull Request.**
 
-## License
-CaseMaster CLI is licensed under the MIT License. See `LICENSE` for details.
+
