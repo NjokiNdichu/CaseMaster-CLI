@@ -1,0 +1,4 @@
+click
+sqlalchemy
+sqlite3
+alembic
