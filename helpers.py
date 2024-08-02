@@ -114,7 +114,7 @@ def find_case_by_id(case_id):
     with SessionLocal() as session:
         case = session.query(Case).get(case_id)
         if case:
-            print(f"ID: {case.id}, Title: {case.title}, Description: {case.description}, Client ID: {case.client_id}, Lawyer ID: {case.lawyer_id}")
+            print(f"ID: {case.id}, Title: {case.title}, Client ID: {case.client_id}, Lawyer ID: {case.lawyer_id}")
         else:
             print(f"Case with ID {case_id} not found.")
 
