@@ -92,9 +92,9 @@ To get started with **CaseMaster CLI**, follow these steps:
 - SQLite3: For the database engine.
   Dependencies are listed in requirements.txt and can be installed with:
 
-      ```bash
-      pip install -r requirements.txt
-      ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 
