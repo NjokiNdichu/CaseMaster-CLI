@@ -40,7 +40,7 @@ def menu():
             manage_cases()
         elif choice == 4:
             click.echo("Exiting the system. Goodbye!")
-            break  # Exit the loop and the program
+            break  
         else:
             click.echo("Invalid choice. Please choose a valid option.")
 
@@ -72,7 +72,7 @@ def manage_clients():
             name = click.prompt("Enter new name (or leave blank to keep current)", default=None)
             update_client(client_id, name)
         elif choice == 6:
-            break  # Exit the client management menu and return to the main menu
+            break  
         else:
             click.echo("Invalid choice. Please choose a valid option.")
 
@@ -104,7 +104,7 @@ def manage_lawyers():
             name = click.prompt("Enter new name (or leave blank to keep current)", default=None)
             update_lawyer(lawyer_id, name)
         elif choice == 6:
-            break  # Exit the lawyer management menu and return to the main menu
+            break  
         else:
             click.echo("Invalid choice. Please choose a valid option.")
 
@@ -140,7 +140,7 @@ def manage_cases():
             lawyer_id = click.prompt("Enter new lawyer ID (or leave blank to keep current)", default=None, type=int)
             update_case(case_id, title, client_id, lawyer_id)
         elif choice == 6:
-            break  # Exit the case management menu and return to the main menu
+            break  
         else:
             click.echo("Invalid choice. Please choose a valid option.")
 

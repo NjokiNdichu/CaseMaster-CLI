@@ -2,7 +2,6 @@ from db.models import SessionLocal, Client, Lawyer, Case
 
 def seed_database():
     with SessionLocal() as session:
-        # Add clients
         clients = [
             Client(name="John Doe"),
             Client(name="Jane Smith"),
@@ -18,7 +17,7 @@ def seed_database():
         session.add_all(clients)
         session.commit()
 
-        # Add lawyers
+        
         lawyers = [
             Lawyer(name="Alice Johnson"),
             Lawyer(name="Bob Brown"),
@@ -34,7 +33,7 @@ def seed_database():
         session.add_all(lawyers)
         session.commit()
 
-        # Add cases
+        
         cases = [
             Case(title="Case 1", client_id=clients[0].id, lawyer_id=lawyers[0].id),
             Case(title="Case 2", client_id=clients[1].id, lawyer_id=lawyers[1].id),
